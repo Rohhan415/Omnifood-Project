@@ -11,6 +11,11 @@
     display: grid;
     column-gap: 6.4rem;
     row-gap: 9.6rem;
+    margin-bottom: 9.6rem;
+}
+
+.grid:not(:last-child) {
+    margin-bottom: 9.6rem;
 }
 
 .grid--2-cols {
@@ -25,13 +30,13 @@
     grid-template-columns: repeat(4, 1fr);
 }
 
-.grid--center-v{
+.grid--center-v {
     align-items: center;
 }
 
 .heading-primary,
-.heading-secondary ,
-.heading-tertiary{
+.heading-secondary,
+.heading-tertiary {
     font-weight: 700;
     color: #333;
     letter-spacing: -0.5px;
@@ -50,43 +55,45 @@
     margin-bottom: 9.6rem;
 }
 
-.heading-tertiary{
+.heading-tertiary {
     font-size: 3.0rem;
     line-height: 1.2;
     margin-bottom: 3.2rem;
 }
 
-.subheading{
+.subheading {
     display: block;
     font-size: 1.6rem;
     font-weight: 500;
-    color:#cf711f;
+    color: #cf711f;
     text-transform: uppercase;
     margin-bottom: 1.6rem;
     letter-spacing: 1px;
 }
 
-.hero-btn:link,
-.hero-btn:visited {
+.btn:link,
+.btn:visited {
     display: inline-block;
     text-decoration: none;
     font-size: 2rem;
     font-weight: 600;
     padding: 1.6rem 3.2rem;
     border-radius: 9px;
-    transition: background-color 0.3s;
+    /*transition: background-color 0.3s;*/
+    transition: all 0.3s;
+
 
 }
 
 
-.hero-btn--full:link,
-.hero-btn--full:visited {
+.btn--full:link,
+.btn--full:visited {
     background-color: #e67e22;
     color: #fff;
 }
 
-.hero-btn--full:hover,
-.hero-btn--full:active {
+.btn--full:hover,
+.btn--full:active {
     background-color: #cf711f;
     color: #fff;
 
@@ -104,6 +111,58 @@
     box-shadow: inset 0 0 0 3px #fff;
 }
 
+.link:link,
+.link:visited {
+    display: inline-block;
+    color: #e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+    color: #cf711f;
+    border-bottom: 1px solid transparent;
+
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.list-item {
+    display: flex;
+    font-size: 1.8rem;
+    align-items: center;
+    gap: 1.6rem
+}
+
+.list-icon {
+    width: 3rem;
+    height: 3rem;
+    color: #e67e22;
+}
+
+/*HELPER/SETTINGS CLASSES*/
+
+
 .hero-margin-right-sm {
     margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+    margin-bottom: 4.8rem !important;
+}
+
+.center-text {
+    text-align: center;
+}
+
+strong {
+    font-weight: 500;
 }
