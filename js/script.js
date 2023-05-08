@@ -41,6 +41,7 @@ allLinks.forEach((link) =>
 
 const sectionHeroEl = document.querySelector(".first-heading");
 
+
     const obs = new IntersectionObserver(
         function (entries) {
             const ent = entries[0];
